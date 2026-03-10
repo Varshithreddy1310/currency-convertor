@@ -1,0 +1,165 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(135deg, #89f7fe, #18146a);
+}
+
+.container {
+  width: 420px;
+  padding: 2rem 2.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+h2{
+  text-align: center;
+}
+
+.amount input {
+  width: 100%;                 
+  padding: 0.7rem;              
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.converter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.from-container,
+.to-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;                 
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.from-container img,
+.to-container img {
+  width: 40px;               
+  border-radius: 5px;
+}
+
+.from-container select,
+.to-container select {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+button {
+  margin-top: 3rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  font-size: 1.4rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.msg{
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+    padding: 1.5rem 1.8rem;
+  }
+
+  .converter {
+    gap: 1rem;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+  }
+
+  .from-container img,
+  .to-container img {
+    width: 35px;
+  }
+
+  .from-container select,
+  .to-container select {
+    font-size: 1rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .converter {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .from {
+    order: 1;
+  }
+
+  button {
+    order: 2;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+  }
+
+  .To {
+    order: 3;
+  }
+
+  .from-container, .to-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .amount input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .msg {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
